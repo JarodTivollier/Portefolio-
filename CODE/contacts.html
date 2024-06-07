@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Accueil ProtoV2.0</title>
+<script src="https://kit.fontawesome.com/92eceed598.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../CSS/Contacts_CSS.css">
+<script src="CODE/BarreDeRechercheAccueil.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><button id="btn" onclick="location.href='../index.html'"><i class="fa-regular fa-circle-user"></i> Accueil</button></li>
+            <li><button id="btn" onclick="location.href='Projets.html'"><i class="fa-regular fa-folder-open"></i> Projets</button></li>
+            <li><button id="btn" onclick="location.href='#'"><i class="fa-solid fa-phone"></i> Contacts</button></li>
+            <li><input type="text" id="searchInput" placeholder="Rechercher..."><button onclick="search()" id="btnR">SEARCH</button></li>
+        </ul>
+    </nav>
+    <div id="reseaux">
+      <section id="reseauS">
+        <h2>Réseaux sociaux</h2>
+        <ul>
+            <li><a href="https://x.com/DTher006"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><p>Mail: jarod.tivollier@orange.fr</p></li>
+        </ul>
+      </section>
+      <section id="form">
+        <form class="contact-form" action="mail.php" method="post">
+          <h2>Contactez-moi</h2>
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" required>
+  
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required>
+  
+          <label for="subject">Sujet :</label>
+          <input type="text" id="subject" name="subject" required>
+  
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+  
+          <button type="submit" disabled>Envoyer</button>
+      </form>
+      </section>
+    </div>
+
+
+</body>
+</html>

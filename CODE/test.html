@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .contact-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        .contact-form h2 {
+            margin-bottom: 20px;
+        }
+        .contact-form .form-group {
+            margin-bottom: 15px;
+        }
+        .contact-form .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-form .form-group input,
+        .contact-form .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form .form-group textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .contact-form button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="contact-form">
+    <h2>Contactez-nous</h2>
+    <form action="submit_form.php" method="POST">
+        <div class="form-group">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required oninvalid="this.setCustomValidity('Veuillez entrer votre nom.')" oninput="this.setCustomValidity('')">
+        </div>
+        <div class="form-group">
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required oninvalid="this.setCustomValidity('Veuillez entrer une adresse email valide.')" oninput="this.setCustomValidity('')">
+        </div>
+        <div class="form-group">
+            <label for="subject">Sujet :</label>
+            <input type="text" id="subject" name="subject" required oninvalid="this.setCustomValidity('Veuillez entrer le sujet de votre message.')" oninput="this.setCustomValidity('')">
+        </div>
+        <div class="form-group">
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required oninvalid="this.setCustomValidity('Veuillez entrer votre message.')" oninput="this.setCustomValidity('')"></textarea>
+        </div>
+        <button type="submit">Envoyer</button>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+body {
+    background-color: rgb(22, 21, 21);
+   /*background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
+    background-blend-mode: multiply,multiply;
+    background-size: auto;
+    background-repeat: no-repeat;*/
+}
+li {
+    display: inline;
+    margin: 20px;
+}
+nav {
+    background-color: rgb(22, 21, 21);
+    padding: 5px;
+    margin-bottom: 50px;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: lightsalmon;
+}
+div{
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    color: white;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+div > section:nth-child(2){
+    text-align: right;
+}
+
+section{
+    background-color: rgba(50, 50,50, 0.5);
+    border: 5px solid black;
+    box-shadow:
+    0 0 8px black,
+    inset 0 0 8px black,
+    0 0 16px #17C3B2,
+    inset 0 0 16px black;
+    margin: 20px;
+    border-radius: 10px;
+}
+#btn, #btnR {
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+}
+   
+#btn::before, #btnR::before{
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+   
+#btn:hover::before, #btnR:hover::before  {
+    width: 105%;
+}
+   
+#btn:hover, #btnR:hover {
+    color: #111;
+}
+p {
+    margin: 10px;
+    color: white;
+}
+div {
+    display: flex;
+    flex-direction: column;
+}
+#moi {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;   
+}
+#moi h1, #moi h2{
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+#moidiv {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+ol > li {
+    color: white;
+}
+#gauche, #gauchep {
+    text-align: left;
+}
+#projectsSection {
+    text-align: right;
+}
+
+
+
+   

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Accueil ProtoV2.0</title>
+<script src="https://kit.fontawesome.com/92eceed598.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="CSS/Accueil.css">
+<script src="CODE/BarreDeRechercheAccueil.js"></script>
+<script src="CODE/aleatoire.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><button id="btn" onclick="location.href='#'"><i class="fa-regular fa-circle-user"></i> Accueil</button></li>
+            <li><button id="btn" onclick="location.href='CODE/Projets.html'"><i class="fa-regular fa-folder-open"></i> Projets</button></li>
+            <li><button id="btn" onclick="location.href='CODE/contacts.html'"><i class="fa-solid fa-phone"></i> Contacts</button></li>
+            <li><input type="text" id="searchInput" placeholder="exemple: SAE1.04"><button onclick="search()" id="btnR">SEARCH</button></li>
+        </ul>
+    </nav>
+    <div id="moidiv">
+        <section id="moi">
+                <img src="IMG/pp.png" width="50%">
+                <h1>Jarod TIVOLLIER</h1>
+                <h2>19 ans</h2>
+                <h2>tel</h2>
+        </section>
+    </div>
+    <div>
+        <section>
+            <h2>Qui-suis je ?</h2>
+            <p>Je m'appelle Jarod Tivollier, étudiant à l'IUT2 de Grenoble avec un cursus BUT INFO, je suis quelqu'un assez autonome et sérieux. j'adore l'informatique et plus particulièrement la programmation
+                    ainsi que les jeux vidéo et je pratique aussi de l'escalade. J'aimerai plus tard travailler dans le jeu vidéo je trouve ce domaine incroyable, pour moi les jeux vidéos c'est pouvoir 
+                    donner vie à nos idées, pouvoir donner une histoire à tout cela.
+             </p>
+        </section>
+        <section>
+            <h2>Compétences</h2>
+            <ol>
+                <li>Programmation JAVA 7/10</li>
+                <li>Programmation WEB (html,css,JS,PHP) 6/10</li>
+                <li>Anglais 7/10</li>
+            </ol>
+            <h2 id="gauche">Parcours</h2>
+            <p id="gauchep">BAC STI2D mention assez bien -> Lycée Pierre Termier Grenoble</p>
+        </section>
+        <section id="projectsSection">
+            <h2>Différents projets</h2>
+        </section>
+    </div>
+</body>
+</html>
