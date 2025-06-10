@@ -109,5 +109,30 @@ td {
     margin-right: 150px;
 }
 
+.gallery {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.gallery figure {
+    margin: 0; 
+    text-align: center; 
+}
+
+.gallery img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    border: 1px solid #ddd; 
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); 
+}
+
+.gallery figcaption {
+    margin-top: 8px;
+    font-style: italic;
+    color: #ddd; 
+}
 
 
